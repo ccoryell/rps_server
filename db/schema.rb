@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100625034644) do
+ActiveRecord::Schema.define(:version => 20100625090041) do
 
   create_table "clients", :force => true do |t|
     t.string   "email",                             :default => "", :null => false
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(:version => 20100625034644) do
   end
 
   create_table "plays", :force => true do |t|
-    t.integer  "user_id"
+    t.integer  "client_id"
     t.integer  "game_id"
     t.string   "play",       :limit => 1
     t.datetime "created_at"

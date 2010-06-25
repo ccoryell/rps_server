@@ -6,7 +6,7 @@ describe GamesController do
     @challenger = Client.create
     @opponent = Client.create
   end
-  
+
   describe "#new" do
     context "with valid data" do
       it "should show a page with buttons" do
@@ -56,7 +56,7 @@ describe GamesController do
         
         it "should redirect to game page" do
           get :accept, :game_id => @game.id
-          response.should redirect_to("/games/show/#{@game.id}")
+          response.should redirect_to("/games/#{@game.id}")
         end
 
         it "should 'accept' the game" do
@@ -85,63 +85,41 @@ describe GamesController do
       end
     end
   end
+
   
   describe "#create" do
-    describe "with valid data" do
-      before do
-        @game_count = Game.count
-   
-        get :create,
-              :challenger_id => @challenger.id,
-              :opponent_id   => @opponent.id
-       end
-      
-      it "should create a new game" do
-        Game.count.should == @game_count +1
-      end
-      
-      it "should return the new game id" do
-        new_game = Game.find(:all).last.id.to_s
-        response.body.should == new_game
-      end
-      
-      it "should create the new game with correct players" do
-        new_game = Game.find(:all).last
-        new_game.challenger.id.should == @challenger.id
-        new_game.opponent.id.should == @opponent.id
-      end
-      
+    it "should have a valid restful route" do
+      params_from(:post, "/games").should == {:controller => "games", :action => "create"}
     end
-    
-    describe "with preexisting game" do
-      
-      before do
-        @challenger = Client.create
-        @opponent = Client.create
-        get :create,
-              :challenger_id => @challenger.id,
-              :opponent_id   => @opponent.id
-        @pre_existing_game = Game.find(:all).last
-        get :create,
-              :challenger_id => @challenger.id,
-              :opponent_id   => @opponent.id            
-      end
 
-      it "should return the pre-existing game" do
-        response.body.should == @pre_existing_game.id.to_s
-      end
-      
-    end
-    
-    describe "with non-existent players" do
+    context "with valid data" do
       before do
-        get :create,
-                :challenger_id => "foo",
-                :opponent_id   => "bar"
+        sign_in @challenger
+        @game_count = Game.all.length
+        post :create, :play => "rock", :opponent_id => @opponent.id
+        
       end
-      it "should return an error message" do
-        response.body.should =~ /error/
+      it "should create a new game and a new play for the logged in user" do
+        Game.all.length.should == @game_count + 1
       end
+      it "should create a play for the challenger" do
+        game = Game.find :first, :conditions => {:challenger_id => @challenger.id, :opponent_id => @opponent.id, :is_accepted => false}
+        play = Play.find :first, :conditions => {:game_id => game.id, :client_id => @challenger.id}
+        play.should_not == nil
+        play.kind.should == "rock"
+      end
+    end
+
+
+    it "should be not let you challenge if you've already challenged" do
+      @challenger = Client.create
+      @opponent = Client.create
+      @pending_game = Game.create(:challenger => @challenger, :opponent => @opponent, :is_accepted => false)
+      sign_in @challenger
+      
+      post :create, :play => "rock", :opponent_id => @opponent.id
+      
+      flash[:already_challenged_that_user].should == true  
     end
     
   end

@@ -1,3 +1,10 @@
 <h1>Challenge <%=@opponent.email%> to a match!</h1>
 
-Your Play: <a href="">Rock</a> <a href="">Paper</a> <a href="">Scissors</a>
+Your Play:
+<%- ["rock", "paper", "scissors"].each do |play| -%>
+	<% form_for :game, :url => { :action => "" } do |f| %>
+	  <%= hidden_field_tag 'play', play%>
+	  <%= hidden_field_tag 'opponent_id', @opponent.id %>
+      <%= submit_tag play.titleize %>
+    <% end %>  
+<%- end -%>

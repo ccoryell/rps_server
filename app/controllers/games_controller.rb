@@ -1,21 +1,20 @@
 class GamesController < ApplicationController
 
   def create
-    if Game.exists?(:challenger_id=>params["challenger_id"], :opponent_id=>params["opponent_id"])
-    then 
-      game = Game.find(:first, :conditions=>{:challenger_id=>params["challenger_id"], :opponent_id=>params["opponent_id"]})
+    game = Game.new(:opponent_id => params[:opponent_id], :is_accepted => false)
+    game.challenger = current_client
+    if !game.save
+      flash[:already_challenged_that_user] = true
     else
-      game = Game.create(:challenger_id=>params["challenger_id"], :opponent_id=>params["opponent_id"])
+      Play.create(:client => current_client, :play => params[:play], :game => game)
     end
-    if game.valid?
-      render :text=>game.id
-    else
-      render :text=>"error: invalid game"
-    end
+    redirect_to :controller => 'home', :action => 'index'   
   end
   
   def new
     @opponent = Client.find_by_id params["opponent_id"]
+    @game = Game.new :opponent => @opponent
+    
     if @opponent == nil || @opponent == current_client
       flash[:opponent_not_found] = true
       redirect_to "/"
