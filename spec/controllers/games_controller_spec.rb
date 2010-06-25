@@ -13,7 +13,7 @@ describe GamesController do
         sign_in @challenger
         get :new, :opponent_id => @opponent.id
         response.should be_success
-        response.body.should =~ /rock/
+        response.body.should =~ /Rock/
       end
     end
 

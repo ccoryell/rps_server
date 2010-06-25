@@ -3,6 +3,10 @@ require 'spec_helper'
 describe HomeController do
   describe "#index" do
     context "when not logged in" do
+      it "should work" do
+        get :index
+        response.should be_success
+      end
     end
     
     context "when logged in" do

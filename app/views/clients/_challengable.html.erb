@@ -1,0 +1,7 @@
+<p>
+	<ul>
+	<% challengable_users.each do |u| %>
+		<li><a href="/games/new?opponent_id=<%= u.id %>"><%= u.email %></a></li>
+	 <% end %>
+	</ul>
+</p>

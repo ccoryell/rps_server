@@ -3,11 +3,7 @@ class Client < ActiveRecord::Base
   
  attr_accessible :email, :password, :password_confirmation
  
-
- 
- 
  def challengable_users
-   
    Client.find ( :all, :conditions => [ "id != ?", self.id ])
  end
 end

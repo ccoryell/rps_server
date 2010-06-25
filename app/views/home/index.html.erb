@@ -1,13 +1,9 @@
 <h1>Hello!</h1>
 <% if client_signed_in? -%>
   <h2>Challenge someone to a game:</h2>
-  <p><ul><% @challengable_users.each do |u| %>
-	<li><a href="/games/new?opponent_id=<%= u.id %>"><%= u.email %></a></li>
-	 <% end %>
-	</ul></p>
+  <%= render :partial => "clients/challengable", :locals => { :challengable_users => @challengable_users } %>	
 <% else -%>
   <p><%= link_to 'Sign up as User', new_client_registration_path %></p>
   <p><%= link_to 'Sign in as User', new_client_session_path %></p>
 <% end -%>
 
-<p>Foo</p>

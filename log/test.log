@@ -25339,3 +25339,1154 @@ Processing GamesController#new (for 0.0.0.0 at 2010-06-25 12:24:17) [GET]
 Rendering template within layouts/application
 Rendering games/new
 Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/games/new?opponent_id=2]
+  [4;36;1mClient Create (0.4ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mGame Create (0.2ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:33:50', '2010-06-25 06:33:50', 'f', 2)[0m
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:33:50', '2010-06-25 06:33:50', 'f', 2)[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:33:50', '2010-06-25 06:33:50', 'f', 2)[0m
+  [4;35;1mGame Update (0.1ms)[0m   [0mUPDATE "games" SET "updated_at" = '2010-06-25 06:33:50', "is_accepted" = 't' WHERE "id" = 1[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."opponent_id" = 1) [0m
+Rendering template within layouts/application
+Rendering clients/challenges
+Completed in 31ms (View: 29, DB: 2) | 200 OK [http://test.host/clients/challenges]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(2, '2010-06-25 06:33:50', '2010-06-25 06:33:50', 'f', 1)[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(3, '2010-06-25 06:33:50', '2010-06-25 06:33:50', 'f', 1)[0m
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."opponent_id" = 1) [0m
+Rendering template within layouts/application
+Rendering clients/challenges
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/clients/challenges]
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+Redirected to http://test.host/clients/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_client!] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/clients/challenges]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:33:50) [POST]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/clients/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:33:50) [POST]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/clients/create]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:33:50) [POST]
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/clients/create]
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mPlays Create (2.2ms)[0m   [0;1mINSERT INTO "plays" ("play", "created_at", "updated_at", "user_id", "game_id") VALUES(NULL, '2010-06-25 06:33:50', '2010-06-25 06:33:50', NULL, NULL)[0m
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE (id != 1) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE (id != 1) [0m
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  Parameters: {"challenger_id"=>"foo", "opponent_id"=>"bar"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = 'bar' AND "games"."challenger_id" = 'foo') LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+Completed in 5ms (View: 0, DB: 4) | 200 OK [http://test.host/games/create?challenger_id=foo&opponent_id=bar]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  Parameters: {"challenger_id"=>"3", "opponent_id"=>"4"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 4) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(3, '2010-06-25 06:33:50', '2010-06-25 06:33:50', 'f', 4)[0m
+Completed in 63ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=3&opponent_id=4]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  Parameters: {"challenger_id"=>"3", "opponent_id"=>"4"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 4) [0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=3&opponent_id=4]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:33:50', '2010-06-25 06:33:50', 'f', 2)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:33:50', '2010-06-25 06:33:50', 'f', 2)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:33:50', '2010-06-25 06:33:50', 'f', 2)[0m
+Completed in 5ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:33:50', '2010-06-25 06:33:50', 'f', 2)[0m
+
+
+Processing GamesController#accept (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  Parameters: {"game_id"=>"1"}
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Update (0.1ms)[0m   [0;1mUPDATE "games" SET "updated_at" = '2010-06-25 06:33:50', "is_accepted" = 't' WHERE "id" = 1[0m
+Redirected to http://test.host/games/show/1
+Completed in 4ms (DB: 3) | 302 Found [http://test.host/games/accept?game_id=1]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:33:50', '2010-06-25 06:33:50', 'f', 2)[0m
+
+
+Processing GamesController#accept (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  Parameters: {"game_id"=>"1"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = '1') LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;35;1mGame Update (0.1ms)[0m   [0mUPDATE "games" SET "updated_at" = '2010-06-25 06:33:50', "is_accepted" = 't' WHERE "id" = 1[0m
+Redirected to http://test.host/games/show/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/games/accept?game_id=1]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 1) [0m
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  Parameters: {"opponent_id"=>"-1"}
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = '-1') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/new?opponent_id=-1]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  Parameters: {"opponent_id"=>"1"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = '1') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/new?opponent_id=1]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  Parameters: {"opponent_id"=>"2"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = '2') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering games/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/games/new?opponent_id=2]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', 'other_user@example.com')[0m
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE (id != 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/home]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:33:50', '2010-06-25 06:33:50', '', '')[0m
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-06-25 14:33:50) [GET]
+  [4;36;1mClient Create (0.5ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:34:30', '2010-06-25 06:34:30', 'f', 2)[0m
+  [4;35;1mClient Create (66.6ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:34:30', '2010-06-25 06:34:30', 'f', 2)[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:34:30', '2010-06-25 06:34:30', 'f', 2)[0m
+  [4;35;1mGame Update (0.1ms)[0m   [0mUPDATE "games" SET "updated_at" = '2010-06-25 06:34:30', "is_accepted" = 't' WHERE "id" = 1[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."opponent_id" = 1) [0m
+Rendering template within layouts/application
+Rendering clients/challenges
+Completed in 6ms (View: 3, DB: 68) | 200 OK [http://test.host/clients/challenges]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(2, '2010-06-25 06:34:30', '2010-06-25 06:34:30', 'f', 1)[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(3, '2010-06-25 06:34:30', '2010-06-25 06:34:30', 'f', 1)[0m
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."opponent_id" = 1) [0m
+Rendering template within layouts/application
+Rendering clients/challenges
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/clients/challenges]
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+Redirected to http://test.host/clients/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_client!] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/clients/challenges]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:34:30) [POST]
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/clients/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:34:30) [POST]
+  [4;36;1mClient Create (0.5ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/clients/create]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:34:30) [POST]
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/clients/create]
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mPlays Create (0.3ms)[0m   [0;1mINSERT INTO "plays" ("play", "created_at", "updated_at", "user_id", "game_id") VALUES(NULL, '2010-06-25 06:34:30', '2010-06-25 06:34:30', NULL, NULL)[0m
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE (id != 1) [0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE (id != 1) [0m
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', 'other_user@example.com')[0m
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE (id != 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 0, DB: 2) | 200 OK [http://test.host/home]
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  Parameters: {"challenger_id"=>"foo", "opponent_id"=>"bar"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = 'bar' AND "games"."challenger_id" = 'foo') LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+Completed in 64ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=foo&opponent_id=bar]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  Parameters: {"challenger_id"=>"3", "opponent_id"=>"4"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 4) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(3, '2010-06-25 06:34:30', '2010-06-25 06:34:30', 'f', 4)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=3&opponent_id=4]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  Parameters: {"challenger_id"=>"3", "opponent_id"=>"4"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 4) [0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=3&opponent_id=4]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:34:30', '2010-06-25 06:34:30', 'f', 2)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:34:30', '2010-06-25 06:34:30', 'f', 2)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:34:30', '2010-06-25 06:34:30', 'f', 2)[0m
+Completed in 4ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:34:30', '2010-06-25 06:34:30', 'f', 2)[0m
+
+
+Processing GamesController#accept (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  Parameters: {"game_id"=>"1"}
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Update (0.1ms)[0m   [0;1mUPDATE "games" SET "updated_at" = '2010-06-25 06:34:30', "is_accepted" = 't' WHERE "id" = 1[0m
+Redirected to http://test.host/games/show/1
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/games/accept?game_id=1]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:34:30', '2010-06-25 06:34:30', 'f', 2)[0m
+
+
+Processing GamesController#accept (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  Parameters: {"game_id"=>"1"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = '1') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;35;1mGame Update (0.1ms)[0m   [0mUPDATE "games" SET "updated_at" = '2010-06-25 06:34:30', "is_accepted" = 't' WHERE "id" = 1[0m
+Redirected to http://test.host/games/show/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/games/accept?game_id=1]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 1) [0m
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  Parameters: {"opponent_id"=>"-1"}
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = '-1') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/new?opponent_id=-1]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  Parameters: {"opponent_id"=>"1"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = '1') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/games/new?opponent_id=1]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:34:30', '2010-06-25 06:34:30', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:34:30) [GET]
+  Parameters: {"opponent_id"=>"2"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = '2') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering games/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/games/new?opponent_id=2]
+  [4;36;1mClient Create (0.4ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;36;1mGame Create (0.2ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:38:20', '2010-06-25 06:38:20', 'f', 2)[0m
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:38:20', '2010-06-25 06:38:20', 'f', 2)[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:38:20', '2010-06-25 06:38:20', 'f', 2)[0m
+  [4;35;1mGame Update (0.1ms)[0m   [0mUPDATE "games" SET "updated_at" = '2010-06-25 06:38:20', "is_accepted" = 't' WHERE "id" = 1[0m
+  [4;36;1mClient Create (1.0ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:38:20) [GET]
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."opponent_id" = 1) [0m
+Rendering template within layouts/application
+Rendering clients/challenges
+Completed in 6ms (View: 3, DB: 3) | 200 OK [http://test.host/clients/challenges]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(2, '2010-06-25 06:38:20', '2010-06-25 06:38:20', 'f', 1)[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(3, '2010-06-25 06:38:20', '2010-06-25 06:38:20', 'f', 1)[0m
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:38:20) [GET]
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."opponent_id" = 1) [0m
+Rendering template within layouts/application
+Rendering clients/challenges
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/clients/challenges]
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:38:20) [GET]
+Redirected to http://test.host/clients/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_client!] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/clients/challenges]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:38:20) [POST]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/clients/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:38:20) [POST]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/clients/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:38:20) [POST]
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/clients/create]
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mPlays Create (0.3ms)[0m   [0;1mINSERT INTO "plays" ("play", "created_at", "updated_at", "user_id", "game_id") VALUES(NULL, '2010-06-25 06:38:20', '2010-06-25 06:38:20', NULL, NULL)[0m
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE (id != 1) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE (id != 1) [0m
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', 'other_user@example.com')[0m
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-06-25 14:38:20) [GET]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-06-25 14:38:20) [GET]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:20', '2010-06-25 06:38:20', '', '')[0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:38:20) [GET]
+  Parameters: {"challenger_id"=>"foo", "opponent_id"=>"bar"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = 'bar' AND "games"."challenger_id" = 'foo') LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+Completed in 61ms (View: 0, DB: 3) | 200 OK [http://test.host/games/create?challenger_id=foo&opponent_id=bar]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:38:21) [GET]
+  Parameters: {"challenger_id"=>"3", "opponent_id"=>"4"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 4) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(3, '2010-06-25 06:38:21', '2010-06-25 06:38:21', 'f', 4)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=3&opponent_id=4]
+  [4;35;1mGame Load (0.4ms)[0m   [0mSELECT * FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:38:21) [GET]
+  Parameters: {"challenger_id"=>"3", "opponent_id"=>"4"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 4) [0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=3&opponent_id=4]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:38:21) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:38:21', '2010-06-25 06:38:21', 'f', 2)[0m
+Completed in 4ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:38:21) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:38:21', '2010-06-25 06:38:21', 'f', 2)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:38:21) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:38:21', '2010-06-25 06:38:21', 'f', 2)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;35;1mClient Create (0.5ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:38:21', '2010-06-25 06:38:21', 'f', 2)[0m
+
+
+Processing GamesController#accept (for 0.0.0.0 at 2010-06-25 14:38:21) [GET]
+  Parameters: {"game_id"=>"1"}
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Update (0.1ms)[0m   [0;1mUPDATE "games" SET "updated_at" = '2010-06-25 06:38:21', "is_accepted" = 't' WHERE "id" = 1[0m
+Redirected to http://test.host/games/show/1
+Completed in 3ms (DB: 3) | 302 Found [http://test.host/games/accept?game_id=1]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:38:21', '2010-06-25 06:38:21', 'f', 2)[0m
+
+
+Processing GamesController#accept (for 0.0.0.0 at 2010-06-25 14:38:21) [GET]
+  Parameters: {"game_id"=>"1"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = '1') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;35;1mGame Update (0.1ms)[0m   [0mUPDATE "games" SET "updated_at" = '2010-06-25 06:38:21', "is_accepted" = 't' WHERE "id" = 1[0m
+Redirected to http://test.host/games/show/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/games/accept?game_id=1]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 1) [0m
+  [4;35;1mClient Create (0.4ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:38:21) [GET]
+  Parameters: {"opponent_id"=>"-1"}
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = '-1') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/new?opponent_id=-1]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:38:21) [GET]
+  Parameters: {"opponent_id"=>"1"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = '1') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/new?opponent_id=1]
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:38:21', '2010-06-25 06:38:21', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:38:21) [GET]
+  Parameters: {"opponent_id"=>"2"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = '2') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering games/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/games/new?opponent_id=2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mClient Create (0.4ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:15', '2010-06-25 06:39:15', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:15', '2010-06-25 06:39:15', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:39:15', '2010-06-25 06:39:15', 'f', 2)[0m
+  [4;35;1mClient Create (64.6ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:15', '2010-06-25 06:39:15', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:15', '2010-06-25 06:39:15', '', '')[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:39:15', '2010-06-25 06:39:15', 'f', 2)[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:15', '2010-06-25 06:39:15', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:15', '2010-06-25 06:39:15', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:39:15', '2010-06-25 06:39:15', 'f', 2)[0m
+  [4;35;1mGame Update (0.1ms)[0m   [0mUPDATE "games" SET "updated_at" = '2010-06-25 06:39:16', "is_accepted" = 't' WHERE "id" = 1[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."opponent_id" = 1) [0m
+Rendering template within layouts/application
+Rendering clients/challenges
+Completed in 7ms (View: 3, DB: 66) | 200 OK [http://test.host/clients/challenges]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(2, '2010-06-25 06:39:16', '2010-06-25 06:39:16', 'f', 1)[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(3, '2010-06-25 06:39:16', '2010-06-25 06:39:16', 'f', 1)[0m
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."opponent_id" = 1) [0m
+Rendering template within layouts/application
+Rendering clients/challenges
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/clients/challenges]
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+Redirected to http://test.host/clients/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_client!] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/clients/challenges]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:39:16) [POST]
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/clients/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:39:16) [POST]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/clients/create]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:39:16) [POST]
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/clients/create]
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mPlays Create (0.9ms)[0m   [0;1mINSERT INTO "plays" ("play", "created_at", "updated_at", "user_id", "game_id") VALUES(NULL, '2010-06-25 06:39:16', '2010-06-25 06:39:16', NULL, NULL)[0m
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Load (0.5ms)[0m   [0mSELECT * FROM "clients" WHERE (id != 1) [0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE (id != 1) [0m
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', 'other_user@example.com')[0m
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE (id != 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 0, DB: 3) | 200 OK [http://test.host/home]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/home]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  Parameters: {"challenger_id"=>"foo", "opponent_id"=>"bar"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = 'bar' AND "games"."challenger_id" = 'foo') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+Completed in 62ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=foo&opponent_id=bar]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  Parameters: {"challenger_id"=>"3", "opponent_id"=>"4"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 4) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(3, '2010-06-25 06:39:16', '2010-06-25 06:39:16', 'f', 4)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=3&opponent_id=4]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  Parameters: {"challenger_id"=>"3", "opponent_id"=>"4"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 4) [0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=3&opponent_id=4]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:39:16', '2010-06-25 06:39:16', 'f', 2)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:39:16', '2010-06-25 06:39:16', 'f', 2)[0m
+Completed in 4ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:39:16', '2010-06-25 06:39:16', 'f', 2)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mClient Create (0.4ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:39:16', '2010-06-25 06:39:16', 'f', 2)[0m
+
+
+Processing GamesController#accept (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  Parameters: {"game_id"=>"1"}
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Update (0.4ms)[0m   [0;1mUPDATE "games" SET "updated_at" = '2010-06-25 06:39:16', "is_accepted" = 't' WHERE "id" = 1[0m
+Redirected to http://test.host/games/show/1
+Completed in 4ms (DB: 3) | 302 Found [http://test.host/games/accept?game_id=1]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:39:16', '2010-06-25 06:39:16', 'f', 2)[0m
+
+
+Processing GamesController#accept (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  Parameters: {"game_id"=>"1"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = '1') LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;35;1mGame Update (0.1ms)[0m   [0mUPDATE "games" SET "updated_at" = '2010-06-25 06:39:16', "is_accepted" = 't' WHERE "id" = 1[0m
+Redirected to http://test.host/games/show/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/games/accept?game_id=1]
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 1) [0m
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  Parameters: {"opponent_id"=>"-1"}
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = '-1') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/new?opponent_id=-1]
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  Parameters: {"opponent_id"=>"1"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = '1') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/new?opponent_id=1]
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:39:16', '2010-06-25 06:39:16', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:39:16) [GET]
+  Parameters: {"opponent_id"=>"2"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = '2') LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering games/new
+Completed in 3ms (View: 1, DB: 1) | 200 OK [http://test.host/games/new?opponent_id=2]
+  [4;36;1mClient Create (0.4ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mGame Create (0.2ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:51:16', '2010-06-25 06:51:16', 'f', 2)[0m
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:51:16', '2010-06-25 06:51:16', 'f', 2)[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:51:16', '2010-06-25 06:51:16', 'f', 2)[0m
+  [4;35;1mGame Update (0.1ms)[0m   [0mUPDATE "games" SET "updated_at" = '2010-06-25 06:51:16', "is_accepted" = 't' WHERE "id" = 1[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."opponent_id" = 1) [0m
+Rendering template within layouts/application
+Rendering clients/challenges
+Completed in 6ms (View: 3, DB: 2) | 200 OK [http://test.host/clients/challenges]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(2, '2010-06-25 06:51:16', '2010-06-25 06:51:16', 'f', 1)[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(3, '2010-06-25 06:51:16', '2010-06-25 06:51:16', 'f', 1)[0m
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."opponent_id" = 1) [0m
+Rendering template within layouts/application
+Rendering clients/challenges
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/clients/challenges]
+
+
+Processing ClientsController#challenges (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+Redirected to http://test.host/clients/sign_in?unauthenticated=true
+Filter chain halted as [:authenticate_client!] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/clients/challenges]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:51:16) [POST]
+  [4;35;1mClient Create (0.4ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/clients/create]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:51:16) [POST]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+Completed in 2ms (View: 0, DB: 1) | 200 OK [http://test.host/clients/create]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-06-25 14:51:16) [POST]
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/clients/create]
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mPlays Create (0.3ms)[0m   [0;1mINSERT INTO "plays" ("play", "created_at", "updated_at", "user_id", "game_id") VALUES(NULL, '2010-06-25 06:51:16', '2010-06-25 06:51:16', NULL, NULL)[0m
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE (id != 1) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE (id != 1) [0m
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', 'other_user@example.com')[0m
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE (id != 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Completed in 3ms (View: 0, DB: 2) | 200 OK [http://test.host/home]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', 'user@example.com')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+
+
+Processing HomeController#index (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 1ms (View: 0, DB: 1) | 200 OK [http://test.host/home]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  Parameters: {"challenger_id"=>"foo", "opponent_id"=>"bar"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = 'bar' AND "games"."challenger_id" = 'foo') LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+Completed in 62ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=foo&opponent_id=bar]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  Parameters: {"challenger_id"=>"3", "opponent_id"=>"4"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 4) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(3, '2010-06-25 06:51:16', '2010-06-25 06:51:16', 'f', 4)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=3&opponent_id=4]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  Parameters: {"challenger_id"=>"3", "opponent_id"=>"4"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."opponent_id" = '4' AND "games"."challenger_id" = '3') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 3) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 4) [0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=3&opponent_id=4]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:51:16', '2010-06-25 06:51:16', 'f', 2)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:51:16', '2010-06-25 06:51:16', 'f', 2)[0m
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.5ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  Parameters: {"challenger_id"=>"1", "opponent_id"=>"2"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT "games".id FROM "games" WHERE ("games"."opponent_id" = '2' AND "games"."challenger_id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:51:16', '2010-06-25 06:51:16', 'f', 2)[0m
+Completed in 4ms (View: 0, DB: 2) | 200 OK [http://test.host/games/create?challenger_id=1&opponent_id=2]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mClient Create (0.2ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.2ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mGame Create (0.1ms)[0m   [0;1mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:51:16', '2010-06-25 06:51:16', 'f', 2)[0m
+
+
+Processing GamesController#accept (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  Parameters: {"game_id"=>"1"}
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = '1') LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;36;1mGame Update (0.1ms)[0m   [0;1mUPDATE "games" SET "updated_at" = '2010-06-25 06:51:16', "is_accepted" = 't' WHERE "id" = 1[0m
+Redirected to http://test.host/games/show/1
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/games/accept?game_id=1]
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mGame Create (0.1ms)[0m   [0mINSERT INTO "games" ("challenger_id", "created_at", "updated_at", "is_accepted", "opponent_id") VALUES(1, '2010-06-25 06:51:16', '2010-06-25 06:51:16', 'f', 2)[0m
+
+
+Processing GamesController#accept (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  Parameters: {"game_id"=>"1"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = '1') LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+  [4;35;1mGame Update (0.1ms)[0m   [0mUPDATE "games" SET "updated_at" = '2010-06-25 06:51:16', "is_accepted" = 't' WHERE "id" = 1[0m
+Redirected to http://test.host/games/show/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/games/accept?game_id=1]
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 1) [0m
+  [4;35;1mClient Create (0.3ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;36;1mClient Create (0.1ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  Parameters: {"opponent_id"=>"-1"}
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = '-1') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/new?opponent_id=-1]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  Parameters: {"opponent_id"=>"1"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = '1') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/new?opponent_id=1]
+  [4;36;1mClient Create (0.3ms)[0m   [0;1mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+  [4;35;1mClient Create (0.1ms)[0m   [0mINSERT INTO "clients" ("encrypted_password", "created_at", "updated_at", "password_salt", "email") VALUES('', '2010-06-25 06:51:16', '2010-06-25 06:51:16', '', '')[0m
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-06-25 14:51:16) [GET]
+  Parameters: {"opponent_id"=>"2"}
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = '2') LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering games/new
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/games/new?opponent_id=2]
