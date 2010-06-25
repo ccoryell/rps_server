@@ -17,6 +17,7 @@ class GamesController < ApplicationController
   def new
     @opponent = Client.find_by_id params["opponent_id"]
     if @opponent == nil || @opponent == current_client
+      flash[:opponent_not_found] = true
       redirect_to "/"
     end
   end

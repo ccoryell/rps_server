@@ -2,14 +2,18 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title><%= h(yield(:title) || "Devise") %></title>
+    <title><%= h(yield(:title) || "RPS server") %></title>
     <%= stylesheet_link_tag 'application' %>
     <%= yield(:head) %>
   </head>
   <body>
     <div id="container">
       <%- flash.each do |name, msg| -%>
-        <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+	    <% if name == :opponent_not_found -%>
+	      <%= content_tag :div, "Opponent Not Found", :id => "flash_notice" %>
+	    <%- else -%>
+          <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+        <%- end -%>
       <%- end -%>
 
       <p><%= link_to 'Home', root_path %></p>
