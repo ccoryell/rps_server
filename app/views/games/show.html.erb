@@ -1,0 +1,7 @@
+<h2>Game <%= @game.id %></h3><br />
+User <%= @game.challenger.id %> challenges User <%= @game.opponent.id %>
+<% @game.rounds.each do |round| -%>
+	
+
+<% end -%>
+<%=partial if @game.rounds.size < 5%>

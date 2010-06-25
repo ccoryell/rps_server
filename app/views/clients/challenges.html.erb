@@ -1,0 +1,6 @@
+<h3>You have been challenged by:</h3>
+<ul>
+<% @challenges.each do |c| -%>
+	<li>user <%= c.challenger.id %> [<a href="/games/accept?game_id=<%= c.id %>">accept</a>]</li>
+<% end -%>
+</ul>
